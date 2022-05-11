@@ -20,7 +20,11 @@
 <link rel="icon" href="images/Web.ico">
 </head>
 
-<body>
+<body onload="myfung()">
+
+  <div id="Loading">
+
+  </div>
 
   <section id="title">
     <div class="container-fluid">
@@ -207,6 +211,20 @@
 
   </footer>
 
+  
+  <script>
+// $(document).ready(function(){
+  // 	$('div#loading').removeAttr('id');
+// });
+var preloader = document.getElementById("Loading");
+// window.addEventListener('load', function(){
+// 	preloader.style.display = 'none';
+// 	})
+
+function myfung(){
+  preloader.style.display = 'none';
+};
+</script>
 
 </body>
 
