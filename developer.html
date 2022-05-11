@@ -38,9 +38,11 @@
     <title>Developers</title>
   </head>
 
-<body>
+<body onload="myfung()">
 
+  <div id="Loading">
 
+  </div>
 
 
     <!-- Nav Bar -->
@@ -153,7 +155,22 @@
         (Mr. Atanu Bera)
       </p>
     </footer>
+  
+  
+<script>
+// $(document).ready(function(){
+  // 	$('div#loading').removeAttr('id');
+// });
+var preloader = document.getElementById("Loading");
+// window.addEventListener('load', function(){
+// 	preloader.style.display = 'none';
+// 	})
 
+function myfung(){
+  preloader.style.display = 'none';
+};
+</script>
+  
 </body>
 
 </html>
